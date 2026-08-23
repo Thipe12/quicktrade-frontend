@@ -1,0 +1,155 @@
+// lib/mock-data.ts
+import { Listing, Category, Condition, UrgencyLevel, ListingStatus } from '@/types'
+
+export const mockListings: Listing[] = [
+  {
+    id: '1',
+    title: 'Dell XPS 13 Laptop - Like New',
+    description: 'Excellent condition, barely used. Great for students and professionals.',
+    price: 8500,
+    suggestedPrice: 8200,
+    category: Category.ELECTRONICS,
+    condition: Condition.LIKE_NEW,
+    location: 'Maseru',
+    images: ['/images/laptop.jpg'],
+    seller: {
+      id: '1',
+      name: 'Tumelo',
+      email: 'tumelo@example.com',
+      location: 'Maseru',
+      trustScore: 4.8,
+      createdAt: new Date('2023-01-01')
+    },
+    status: ListingStatus.ACTIVE,
+    urgency: UrgencyLevel.MEDIUM,
+    createdAt: new Date('2024-12-01'),
+    updatedAt: new Date('2024-12-01'),
+    views: 145,
+    favorites: 34
+  },
+  {
+    id: '2',
+    title: 'IKEA Sofa - 3 Seater',
+    description: 'Comfortable and stylish sofa, perfect for any living room.',
+    price: 3200,
+    suggestedPrice: 3000,
+    category: Category.FURNITURE,
+    condition: Condition.GOOD,
+    location: 'Maseru',
+    images: ['/images/sofa.jpg'],
+    seller: {
+      id: '2',
+      name: 'Mpho',
+      email: 'mpho@example.com',
+      location: 'Maseru',
+      trustScore: 4.5,
+      createdAt: new Date('2023-03-15')
+    },
+    status: ListingStatus.ACTIVE,
+    urgency: UrgencyLevel.HIGH,
+    createdAt: new Date('2024-12-02'),
+    updatedAt: new Date('2024-12-02'),
+    views: 78,
+    favorites: 23
+  },
+  {
+    id: '3',
+    title: 'Samsung Galaxy S22 - 256GB',
+    description: 'Premium smartphone with original accessories and box.',
+    price: 12000,
+    suggestedPrice: 11500,
+    category: Category.ELECTRONICS,
+    condition: Condition.LIKE_NEW,
+    location: 'Maseru',
+    images: ['/images/phone.jpg'],
+    seller: {
+      id: '3',
+      name: 'Lerato',
+      email: 'lerato@example.com',
+      location: 'Maseru',
+      trustScore: 4.9,
+      createdAt: new Date('2023-06-20')
+    },
+    status: ListingStatus.ACTIVE,
+    urgency: UrgencyLevel.LOW,
+    createdAt: new Date('2024-11-28'),
+    updatedAt: new Date('2024-11-28'),
+    views: 220,
+    favorites: 56
+  },
+  {
+    id: '4',
+    title: 'Samsung Washing Machine',
+    description: 'Front load washing machine, 8kg capacity. Excellent condition.',
+    price: 4500,
+    suggestedPrice: 4300,
+    category: Category.APPLIANCES,
+    condition: Condition.GOOD,
+    location: 'Mafeteng',
+    images: ['/images/washing-machine.jpg'],
+    seller: {
+      id: '4',
+      name: 'Nthabeleng',
+      email: 'nthabeleng@example.com',
+      location: 'Mafeteng',
+      trustScore: 4.6,
+      createdAt: new Date('2023-08-10')
+    },
+    status: ListingStatus.ACTIVE,
+    urgency: UrgencyLevel.MEDIUM,
+    createdAt: new Date('2024-12-03'),
+    updatedAt: new Date('2024-12-03'),
+    views: 56,
+    favorites: 12
+  },
+  {
+    id: '5',
+    title: 'Toyota Hilux - 2018 Model',
+    description: 'Well-maintained pickup truck. Great for business or family use.',
+    price: 85000,
+    suggestedPrice: 82000,
+    category: Category.VEHICLES,
+    condition: Condition.GOOD,
+    location: 'Maseru',
+    images: ['/images/truck.jpg'],
+    seller: {
+      id: '5',
+      name: 'Motlatsi',
+      email: 'motlatsi@example.com',
+      location: 'Maseru',
+      trustScore: 4.7,
+      createdAt: new Date('2022-11-05')
+    },
+    status: ListingStatus.ACTIVE,
+    urgency: UrgencyLevel.HIGH,
+    createdAt: new Date('2024-11-25'),
+    updatedAt: new Date('2024-11-25'),
+    views: 312,
+    favorites: 45
+  },
+  {
+    id: '6',
+    title: 'Engineering Textbooks Bundle',
+    description: 'Complete set of civil engineering textbooks. Excellent condition.',
+    price: 1500,
+    suggestedPrice: 1400,
+    category: Category.BOOKS,
+    condition: Condition.LIKE_NEW,
+    location: 'Leribe',
+    images: ['/images/books.jpg'],
+    seller: {
+      id: '6',
+      name: 'Palesa',
+      email: 'palesa@example.com',
+      location: 'Leribe',
+      trustScore: 4.8,
+      createdAt: new Date('2023-09-15')
+    },
+    status: ListingStatus.ACTIVE,
+    urgency: UrgencyLevel.MEDIUM,
+    createdAt: new Date('2024-12-04'),
+    updatedAt: new Date('2024-12-04'),
+    views: 34,
+    favorites: 8
+  }
+]
